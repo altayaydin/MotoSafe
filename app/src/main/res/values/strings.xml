@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name" translatable="false">MotoSafe</string>
+    <string name="titleTextViewString">Speed Information</string>
+    <string name="firstSpeedInputHintString">1st Moto Speed (km/h)</string>
+    <string name="secondSpeedInputString">2nd Moto Speed (km/h)</string>
+    <string name="tipTextViewString">Assign 2nd Speed Value greater than 1st Speed Value</string>
+    <string name="calButtonString">Calculate</string>
+    <string name="firstSpeedTextViewString">1st Speed:</string>
+    <string name="secondBrakingDistanceTextViewString">2nd Braking Distance:</string>
+    <string name="conclusionTextViewString">Conclusion:</string>
+    <string name="firstBrakingDistanceTextViewString">1st braking Distance:</string>
+    <string name="secondSpeedTextViewString">2nd Speed:</string>
+    <string name="firstSpeedOutputTextViewString" translatable="false">km/h</string>
+    <string name="secondSpeedOutputTextViewString" translatable="false">km/h</string>
+    <string name="firstBrakingDistanceOutputTextViewString" translatable="false">m</string>
+    <string name="secondBrakingDistanceOutputTextViewString" translatable="false">m</string>
+    <string name="conclusionOutputTextViewString"></string>
+    <string name="firstReactionTimeTextViewString">1st Reaction Time</string>
+    <string name="secondReactionTimeTextViewString">2nd Reaction Time</string>
+    <string name="firstReactionTimeOutputTextString">s</string>
+    <string name="secondReactionTimeOutputTextString">s</string>
+    <string name="valueSwitchTextString">Calculate with my values</string>
+</resources>
