@@ -14,6 +14,7 @@ import android.widget.TextView
 import android.os.VibrationEffect
 import android.os.Vibrator
 import androidx.core.graphics.toColorInt
+import java.math.RoundingMode
 import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
@@ -82,8 +83,10 @@ class MainActivity : AppCompatActivity() {
 
         if (totalControl == true){
             var reaction = 0.27777 //Constant reaction time considering human.
-            var reactionTime1 = speed1?.times(reaction)
-            var reactionTime2 = speed2?.times(reaction)
+            var reactionTime1 = speed1?.times(reaction)?.toBigDecimal()?.setScale(2, RoundingMode.UP)
+                ?.toDouble()
+            var reactionTime2 = speed2?.times(reaction)?.toBigDecimal()?.setScale(2, RoundingMode.UP)
+                ?.toDouble()
             var breakingDistance1 = speed1?.let { Math.pow(it, 2.0) }?.div(200)
             var breakingDistance2 = speed2?.let { Math.pow(it, 2.0) }?.div(200)
             var totalDistance1 = breakingDistance1?.let { reactionTime1?.plus(it) }

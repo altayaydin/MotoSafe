@@ -115,111 +115,28 @@
         android:textColorHint="#000000"
         android:visibility="visible"
         app:layout_constraintStart_toEndOf="@+id/calButton"
-        app:layout_constraintTop_toBottomOf="@+id/tipTextView" />
-
-    <TextView
-        android:id="@+id/firstSpeedTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/regular"
-        android:gravity="start"
-        android:text="@string/firstSpeedTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calButton" />
-
-    <TextView
-        android:id="@+id/secondSpeedTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/regular"
-        android:gravity="start"
-        android:text="@string/secondSpeedTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstSpeedTextView" />
-
-    <TextView
-        android:id="@+id/firstReactionTimeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/regular"
-        android:gravity="start"
-        android:text="@string/firstReactionTimeTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondSpeedTextView" />
-
-    <TextView
-        android:id="@+id/secondReactionTimeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/regular"
-        android:gravity="start"
-        android:text="@string/secondReactionTimeTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstReactionTimeTextView" />
-
-    <TextView
-        android:id="@+id/firstBrakingDistanceTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/regular"
-        android:gravity="start"
-        android:text="@string/firstBrakingDistanceTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondReactionTimeTextView" />
-
-    <TextView
-        android:id="@+id/secondBrakingDistanceTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/regular"
-        android:gravity="start"
-        android:text="@string/secondBrakingDistanceTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstBrakingDistanceTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/tipTextView"
+        tools:visibility="invisible" />
 
     <TextView
         android:id="@+id/conclusionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/regular"
         android:gravity="start"
         android:text="@string/conclusionTextViewString"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondBrakingDistanceTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleCLayout" />
 
     <TextView
         android:id="@+id/conclusionOutputTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/regular"
@@ -228,91 +145,152 @@
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/conclusionTextView"
-        app:layout_constraintTop_toBottomOf="@+id/secondBrakingDistanceTextView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conclusionTextView" />
 
-    <TextView
-        android:id="@+id/firstSpeedOutputText"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleCLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/regular"
-        android:gravity="end"
-        android:text="@string/firstSpeedOutputTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calButton" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calButton">
 
-    <TextView
-        android:id="@+id/secondSpeedOutputText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/regular"
-        android:gravity="end"
-        android:text="@string/secondSpeedOutputTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstSpeedOutputText" />
+        <TextView
+            android:id="@+id/firstSpeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:gravity="start"
+            android:text="@string/firstSpeedTextViewString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/firstReactionTimeOutputText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/regular"
-        android:gravity="end"
-        android:text="@string/firstReactionTimeOutputTextString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondSpeedOutputText" />
+        <TextView
+            android:id="@+id/firstReactionTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:gravity="start"
+            android:text="@string/firstReactionTimeTextViewString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstSpeedTextView" />
 
-    <TextView
-        android:id="@+id/secondReactionTimeOutputText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/regular"
-        android:gravity="end"
-        android:text="@string/secondReactionTimeOutputTextString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstReactionTimeOutputText" />
+        <TextView
+            android:id="@+id/fullstopDistanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:gravity="start"
+            android:text="@string/fullstopDistanceTextViewString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstReactionTimeTextView" />
 
-    <TextView
-        android:id="@+id/firstBrakingDistanceOutputText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/regular"
-        android:gravity="end"
-        android:text="@string/firstBrakingDistanceOutputTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondReactionTimeOutputText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/secondBrakingDistanceOutputText"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstMotoCLayout"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/titleCLayout"
+        app:layout_constraintTop_toBottomOf="@+id/calButton">
+
+        <TextView
+            android:id="@+id/firstSpeedOutputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/firstSpeedOutputTextViewString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/firstReactionTimeOutputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/firstReactionTimeOutputTextString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstSpeedOutputText" />
+
+        <TextView
+            android:id="@+id/firstBrakingDistanceOutputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/firstFullstopDistanceOutputTextViewString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstReactionTimeOutputText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondMotoCLayout"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:fontFamily="@font/regular"
-        android:gravity="end"
-        android:text="@string/secondBrakingDistanceOutputTextViewString"
-        android:textColor="#000000"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstBrakingDistanceOutputText" />
+        app:layout_constraintTop_toBottomOf="@+id/calButton">
+
+        <TextView
+            android:id="@+id/secondSpeedOutputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/secondSpeedOutputTextViewString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/secondReactionTimeOutputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/secondReactionTimeOutputTextString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondSpeedOutputText" />
+
+        <TextView
+            android:id="@+id/secondBrakingDistanceOutputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:gravity="end"
+            android:text="@string/secondFullstopDistanceOutputTextViewString"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secondReactionTimeOutputText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
